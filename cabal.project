@@ -1,0 +1,13 @@
+with-compiler: ghc-9.4.4
+
+optimization: False
+
+packages:
+  pkg-a
+  pkg-b
+
+-- package pkg-a
+--   ghc-options: -ddump-hi-diffs
+-- 
+-- package pkg-b
+--   ghc-options: -ddump-hi-diffs
